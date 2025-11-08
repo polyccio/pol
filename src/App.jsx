@@ -29,9 +29,9 @@ export default function Portfolio() {
 
 useEffect(() => {
   AOS.init({
-    duration: 1000, // tagal ng animation (1s)
-    once: true,     // para isang beses lang mag-play bawat scroll
-    offset: 100,    // layo bago mag-trigger
+    duration: 1000, 
+    once: true,    
+    offset: 100,    
   });
 }, []);
 
@@ -49,10 +49,10 @@ useEffect(() => {
         }
 
         if (currentY > lastScrollY.current && currentY > 50) {
-          // scroll down -> hide header
+          // scroll down tapos hide header
           setShowHeader(false);
         } else {
-          // scroll up -> show header
+          // scroll up tapos show header
           setShowHeader(true);
         }
 
@@ -236,7 +236,7 @@ useEffect(() => {
 
 
       {/* Home Section */}
-      {/* Home Section */}
+      
 <section
   id="home"
   className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-cover bg-center text-white scroll-smooth"
@@ -273,7 +273,7 @@ useEffect(() => {
     </div>
   </div>
 
-  {/* RIGHT SIDE - IMAGE */}
+  {/* RIGHT SIDE - YUNG IMAGE */}
   <div
     className="md:w-1/2 w-full flex justify-center mt-10 md:mt-0 scale-[0.75]"
     data-aos="fade-left"
@@ -388,7 +388,7 @@ useEffect(() => {
     <div className="w-20 h-1 bg-gradient-to-r from-blue-300 to-purple-300 mx-auto mb-12 rounded-full"></div>
 
     <div className="grid lg:grid-cols-2 gap-12 items-start text-white" data-aos="fade-up" data-aos-delay="200">
-      {/* LEFT SIDE */}
+      {/* LEFT SIDE yung mga box*/}
       <div className="grid grid-cols-2 gap-2">
         {projects.map((project, index) => (
           <div
@@ -521,7 +521,7 @@ useEffect(() => {
 
 
 
-{/* Modal Popup */}
+{/* Popup ng boxes sa project left side*/}
 {isModalOpen && selectedProject && (
   <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[9999] transition-opacity">
     <div className="bg-white rounded-2xl max-w-lg w-[90%] p-6 shadow-2xl relative animate-fadeIn">
