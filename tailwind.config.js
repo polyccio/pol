@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pixel: ['"Press Start 2P"', 'cursive'], // You can switch this to "VT323" if you prefer
+        pixel: ['"Press Start 2P"', 'cursive'], 
       },
     },
   },
